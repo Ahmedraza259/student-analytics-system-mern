@@ -1,0 +1,158 @@
+/*font families*/
+@font-face {font-family: 'Rajdhani';src: url('../fonts/Rajdhani-Bold.woff2') format('woff2'),    url('../fonts/Rajdhani-Bold.woff') format('woff');font-weight: bold;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Rajdhani';src: url('../fonts/Rajdhani-Medium.woff2') format('woff2'),    url('../fonts/Rajdhani-Medium.woff') format('woff');font-weight: 500;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Outfit';src: url('../fonts/Outfit-Regular.woff2') format('woff2'),    url('../fonts/Outfit-Regular.woff') format('woff');font-weight: normal;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Outfit';src: url('../fonts/Outfit-Light.woff2') format('woff2'),    url('../fonts/Outfit-Light.woff') format('woff');font-weight: 300;font-style: normal;font-display: swap;}
+/*container*/
+@media (min-width: 1800px) {.container{max-width: 1702px;}}
+@media (min-width: 1600px) and (max-width: 1799px)  {.container {max-width: 1602px;}}
+@media (min-width: 1400px) and (max-width: 1599px) {.container {max-width: 1502px;}}
+/**/
+body::-webkit-scrollbar {background-color: #1A1A1C;width: 10px;}
+body::-webkit-scrollbar-button {background-color: #1A1A1C;color: #1A1A1C;}
+body::-webkit-scrollbar-track {background-color: #1A1A1C;}
+body::-webkit-scrollbar-track-piece {background-color: #1A1A1C}
+body::-webkit-scrollbar-thumb {background: #FF892E;}
+body::-webkit-scrollbar-corner {background-color: #1A1A1C;}
+body::-webkit-resizer {background-color: #1A1A1C;}
+body::-webkit-scrollbar-button:single-button {display: none;}
+body {scrollbar-color: #FF892E #1A1A1C !important;scrollbar-width: thin;}
+/**/
+body{font-family: 'Outfit';overflow-x: hidden;color: #fff;background: #1A1A1C;}
+/**/
+h1 {font-size: 90px;line-height: 110px;font-weight: bold;font-family: 'Rajdhani';position: relative;margin: 0 0 30px;}
+p {font-size: 19px;line-height: 24px;}
+h2 {font-size: 73px;line-height: 92px;font-weight: bold;font-family: 'Rajdhani';}
+h2 strong {color: #FF3D05;}
+h3 {font-size: 53px;line-height: 67px;font-weight: bold;font-family: 'Rajdhani';}
+/**/
+button{font-size: 22px;line-height: 28px;font-weight: bold;font-family: 'Rajdhani';border-radius: 29px;padding: 14px 36px;max-height: 57px;transition: all ease-in-out 0.3s;}
+button:hover {transition: all ease-in-out 0.3s;}
+.black-button {background-color: #1A1A1C;border: 1px solid #1A1A1C;color: #fff;}
+.black-button:hover {background-color: #fff;color: #1A1A1C;border: 1px solid #fff;}
+.white-button {background-color: #fff;border: 1px solid #fff;color: #1A1A1C;}
+.white-button:hover {background-color: #1A1A1C;color: #fff;border: 1px solid #1A1A1C;}
+/*form area*/
+/* .form-area {background-image: url(../images/about-bg.png);background-repeat: no-repeat;background-size: 100% 100%;position: relative;padding: 60px 0;} */
+.form-area .overlay {position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.89);}
+.form-area form {background: #000;padding: 50px 100px;border-top: 10px solid #f45702;border-radius: 10px;max-width: 700px;margin: 0 auto;position: relative;}
+.form-area form .head {margin: 0 0 50px;}
+.form-area em {color: red;}
+.form-area form label {font-size: 19px;line-height: 24px;color: #fff;display: block;margin: 0 0 10px;}
+.form-area input {color: #fff;background: transparent linear-gradient(180deg, #5D5D5D 0%, #2B3337 100%) 0% 0% no-repeat padding-box;border-radius: 2px;border: none;font-size: 20px;font-weight: normal;line-height: 25px;height: 57px;width: 100%;padding: 12px 12px 12px 12px;margin: 0 0 20px;}
+.form-area textarea {color: #fff;background: transparent linear-gradient(180deg, #5D5D5D 0%, #2B3337 100%) 0% 0% no-repeat padding-box;border-radius: 2px;border: none;font-size: 20px;font-weight: normal;line-height: 25px;width: 100%;padding: 12px 12px 12px 12px;margin: 0 0 20px;resize: none;}
+/*form table*/
+.form-table {position: relative;padding: 60px 0;}
+.form-table .table-form {padding: 50px 100px;border-top: 10px solid #f45702;border-radius: 10px;max-width: 100%;}
+.form-table table {color: #fff;}
+.form-table table .image {width: 50px;height: 50px;border-radius: 5px;overflow: hidden;}
+.form-table table .image img{width: 100%;height: 100%;object-fit: cover;}
+/*Search*/
+.search-area {margin: 25px 0;}
+.search-area {padding: 0px calc(3% + 2%);}
+.search-area {
+    display: flex;
+    margin: 50px 0;
+    padding: 0px calc(7% + 2%);
+    width: 100%;
+    height: 50px;
+  }
+  .search-area .search-div {
+    width: 340px;
+    height: 50px;
+    position: relative;
+  }
+  .search-area .search-div .search-bar {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    border: 0px;
+    vertical-align: top;
+    color: #272560;
+    font-size: 16px;
+    background: #f45702;
+    ;
+    border-radius: 8px;
+    width: 100%;
+    padding: 5px 10px 5px 50px;
+    height: 100%;
+  }
+  .search-area .search-div .search-bar:focus-visible {
+    outline: none;
+  }
+  .search-area .search-div .search-bar::placeholder {
+    color: #272560;
+  }
+  .search-area .search-div .search-icon {
+    color: #272560;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+  /* pagination */
+  .pagination-links{
+    padding: 20px 0px;
+}
+.pagination-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.pagination-links ul li{
+    padding-left: 10px;
+    padding-right: 0%;
+}
+.pagination-links ul li a{
+    color: white;
+    background-color: grey;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-item .page-link {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: #ddd;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #ddd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #f45702;
+  color: #fff;
+}
+.borderremove{
+  border: none;
+  border-width: 0px;
+  background: none;
+}
+
+.textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}

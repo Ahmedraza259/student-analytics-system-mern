@@ -1,0 +1,6 @@
+//Client
+export const CREATE_STUDENT = "CREATE_STUDENT";
+export const GET_STUDENTS = "CREATE_STUDENT";
+export const CREATE_FEEDBACKS = "CREATE_FEEDBACKS"
+export const GET_SUBJECTS = "GET_SUBJECTS"
+export const GET_FEEDBACKS = "GET_FEEDBACKS"
