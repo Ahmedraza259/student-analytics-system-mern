@@ -173,6 +173,12 @@ exports.getFeedbacks = async (req, res) => {
 exports.getLlmPredictions = async (req, res) => {
   try {
     const message = req.body;
+    if (!message.message) {
+      return res.status(500).send({
+        success: false,
+        message: "Enter any Additional information to predict.",
+      });
+    }
     const result = await run(message.message)
     if (result) {
       return res.status(200).send({
