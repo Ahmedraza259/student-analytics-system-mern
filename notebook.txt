@@ -1,0 +1,4 @@
+All type validations for front-end
+add validation for number numbers should not be in - and not b written in exponential
+.gitignore file for backend
+remove extra packages

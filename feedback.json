@@ -1,0 +1,53 @@
+[
+    {
+        "_id": "b",
+        "feedback": [
+            "average",
+            "average",
+            "average"
+        ]
+    },
+    {
+        "_id": "c",
+        "feedback": [
+            "average",
+            "average"
+        ]
+    },
+    {
+        "_id": "a",
+        "feedback": [
+            "average"
+        ]
+    },
+    {
+        "_id": "ali raza",
+        "feedback": [
+            "student is average ",
+            "average",
+            "average",
+            "average",
+            "average",
+            "average",
+            "average"
+        ]
+    },
+    {
+        "_id": "ahmed raza",
+        "feedback": [
+            "student is efficent ",
+            "excellent"
+        ]
+    },
+    {
+        "_id": "d",
+        "feedback": [
+            "average",
+            "average",
+            "average",
+            "average",
+            "average",
+            "average"
+        ]
+    }
+]
