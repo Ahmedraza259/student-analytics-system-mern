@@ -11,17 +11,18 @@ const PredictFeedback = () => {
     const onChangeFeedback = (event) => {
         setMessage(event.target.value);
     }
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         if (!message) {
-            toast.error("Please enter msg to predict")
+            toast.error("Please enter a message to predict");
+            return;
         }
-        setLoader(true)
+        setLoader(true);
         const studentData = { message: message };
-        dispatch(createFeedback(studentData))
-        setLoader(false)
-        setMessage("")
-    }
+        dispatch(createFeedback(studentData));
+        setLoader(false);
+        setMessage("");
+    };
     return (
 
         <div className="col-lg-6">
@@ -38,6 +39,7 @@ const PredictFeedback = () => {
             />
             <button type="submit" onClick={handleSubmit} >{loader ? <Spinner /> : "Submit"}</button>
             <p>***********{feedback}**********</p>
+
         </div>
 
     );

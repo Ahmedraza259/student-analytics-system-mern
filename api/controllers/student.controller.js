@@ -116,7 +116,9 @@ exports.getAllSubjects = async (req, res) => {
       {
         $project: {
           subject: "$_id",
-          averagePercentageScore: 1,
+          averagePercentageScore: {
+            $round: ["$averagePercentageScore", 1],
+          },
           _id: 0
         }
       }
