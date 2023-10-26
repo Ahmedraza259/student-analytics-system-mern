@@ -1,4 +1,4 @@
-import { GET_STUDENTS, CREATE_STUDENT ,CREATE_FEEDBACKS, GET_SUBJECTS, GET_FEEDBACKS } from "../../redux/types";
+import { GET_STUDENTS, CREATE_STUDENT, CREATE_FEEDBACKS, GET_SUBJECTS, GET_FEEDBACKS } from "../../redux/types";
 // import { toast } from "react-toastify";
 import { toast } from "react-hot-toast";
 
@@ -44,7 +44,7 @@ export const createStudent = (StudentData) => (dispatch) => {
           type: CREATE_STUDENT,
           payload: data.data,
         });
-      } 
+      }
     })
     .catch((error) => {
       if (error.response && error.response.data) {
@@ -70,9 +70,6 @@ export const createFeedback = (StudentData) => (dispatch) => {
           type: CREATE_FEEDBACKS,
           payload: data.data,
         });
-        toast.success(data.message);
-      } else {
-        toast.error(data.message);
       }
     })
     .catch((error) => {
@@ -84,7 +81,7 @@ export const createFeedback = (StudentData) => (dispatch) => {
 };
 
 export const getSubjectAverages = () => (dispatch) => {
-  
+
   const url = `http://localhost:5000/api/student/all-subjects`;
   fetch(url, {
     method: "GET",

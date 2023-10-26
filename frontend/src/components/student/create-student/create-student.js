@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { getFeedbacks, createStudent, getSubjectAverages } from "../../students/students.action";
 import { formValidations } from "./validation";
 const CreateStudent = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const createStudentAuth = useSelector(
     (state) => state?.student?.createStudentAuth
@@ -34,6 +36,7 @@ const CreateStudent = () => {
       studentScore: "",
       studentFeedback: "",
     });
+    navigate("/list-students")
   };
 
   return (
