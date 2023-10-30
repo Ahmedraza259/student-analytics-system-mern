@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import { getFeedbacks, createStudent, getSubjectAverages } from "../../students/students.action";
 import { formValidations } from "./validation";
 const CreateStudent = () => {
@@ -20,15 +20,15 @@ const CreateStudent = () => {
 
     dispatch(getSubjectAverages())
     dispatch(getFeedbacks());
-  }, [dispatch, createStudentAuth]);
+  }, [dispatch]);
 
   const handleChange = (e) => {
     setStudentForm({ ...studentForm, [e.target.id]: e.target.value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(createStudent(studentForm));
     formValidations(studentForm)
+    dispatch(createStudent(studentForm));
     setStudentForm({
       studentName: "",
       studentSubject: "",
@@ -36,8 +36,8 @@ const CreateStudent = () => {
       studentScore: "",
       studentFeedback: "",
     });
-    navigate("/list-students")
   };
+  navigate("/all-students")
 
   return (
     <>

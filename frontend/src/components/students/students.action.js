@@ -1,7 +1,5 @@
 import { GET_STUDENTS, CREATE_STUDENT, CREATE_FEEDBACKS, GET_SUBJECTS, GET_FEEDBACKS } from "../../redux/types";
-// import { toast } from "react-toastify";
 import { toast } from "react-hot-toast";
-
 export const getStudents = () => (dispatch) => {
   const url = `http://localhost:5000/api/student/all-students`;
   fetch(url, {
@@ -29,6 +27,7 @@ export const getStudents = () => (dispatch) => {
 };
 
 export const createStudent = (StudentData) => (dispatch) => {
+
   const url = `http://localhost:5000/api/student/add-student`;
   fetch(url, {
     method: "POST",
